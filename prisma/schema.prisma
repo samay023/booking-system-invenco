@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model ClassType {
+  id        Int             @id @default(autoincrement())
+  name      String
+  level     Int?
+  schedules ClassSchedule[]
+
+  @@unique([name, level])
+}
+
+model ClassSchedule {
+  id          Int      @id @default(autoincrement())
+  // e.g. "Monday" -> Friday. SqlLite does not support enums
+  dayOfWeek   String   @default("Monday")
+  startTime   DateTime
+  duration    Int      @default(60) // minutes (default 60)
+  maxSpots    Int      @default(20)
+  classTypeId Int
+
+  classType ClassType  @relation(fields: [classTypeId], references: [id])
+  Bookings  Bookings[]
+
+  @@unique([dayOfWeek, startTime]) // Prevent duplicate schedules
+}
+
+model Bookings {
+  id        Int      @id @default(autoincrement())
+  userEmail String
+  createdAt DateTime @default(now())
+
+  classScheduleId Int
+  classSchedule   ClassSchedule @relation(fields: [classScheduleId], references: [id])
+
+  @@unique([userEmail, classScheduleId]) // Prevent duplicate booking for same user
+}

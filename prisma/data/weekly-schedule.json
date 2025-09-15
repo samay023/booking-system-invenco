@@ -1,0 +1,84 @@
+[
+  {
+    "dayOfWeek": "MONDAY",
+    "startTime": "18:30",
+    "classTypeId": 4,
+    "classType": { "type": "BACHATA", "level": 1 }
+  },
+  {
+    "dayOfWeek": "MONDAY",
+    "startTime": "19:30",
+    "classTypeId": 5,
+    "classType": { "type": "BACHATA", "level": 2 }
+  },
+  {
+    "dayOfWeek": "MONDAY",
+    "startTime": "20:30",
+    "classTypeId": 3,
+    "classType": { "type": "SALSA", "level": 3 }
+  },
+
+  {
+    "dayOfWeek": "TUESDAY",
+    "startTime": "18:30",
+    "classTypeId": 1,
+    "classType": { "type": "SALSA", "level": 1 }
+  },
+  {
+    "dayOfWeek": "TUESDAY",
+    "startTime": "19:30",
+    "classTypeId": 2,
+    "classType": { "type": "SALSA", "level": 2 }
+  },
+  {
+    "dayOfWeek": "TUESDAY",
+    "startTime": "20:30",
+    "classTypeId": 6,
+    "classType": { "type": "REGGAETON" }
+  },
+
+  {
+    "dayOfWeek": "WEDNESDAY",
+    "startTime": "18:30",
+    "classTypeId": 4,
+    "classType": { "type": "BACHATA", "level": 1 }
+  },
+  {
+    "dayOfWeek": "WEDNESDAY",
+    "startTime": "19:30",
+    "classTypeId": 5,
+    "classType": { "type": "BACHATA", "level": 2 }
+  },
+  {
+    "dayOfWeek": "WEDNESDAY",
+    "startTime": "20:30",
+    "classTypeId": 3,
+    "classType": { "type": "SALSA", "level": 3 }
+  },
+
+  {
+    "dayOfWeek": "THURSDAY",
+    "startTime": "18:30",
+    "classTypeId": 1,
+    "classType": { "type": "SALSA", "level": 1 }
+  },
+  {
+    "dayOfWeek": "THURSDAY",
+    "startTime": "19:30",
+    "classTypeId": 2,
+    "classType": { "type": "SALSA", "level": 2 }
+  },
+
+  {
+    "dayOfWeek": "FRIDAY",
+    "startTime": "18:30",
+    "classTypeId": 6,
+    "classType": { "type": "REGGAETON" }
+  },
+  {
+    "dayOfWeek": "FRIDAY",
+    "startTime": "19:30",
+    "classTypeId": 3,
+    "classType": { "type": "SALSA", "level": 3 }
+  }
+]
