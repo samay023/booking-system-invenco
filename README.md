@@ -12,32 +12,27 @@ A serverless booking system built with TypeScript, Express.js, Prisma ORM, and A
 
 ## API Endpoints
 
+- **GET /classes**: List all classes
+- **POST /classes/:id/bookings**: Book a class
+
 ## Setup Instructions
+
+For mac users
+
+```
+npm run initial:setup:mac
+```
+
+For windows users
+
+```
+npm run initial:setup:windows
+```
 
 ### Prerequisites
 
 - Node.js 22 or higher
 - npm
-
-### Installation
-
-1. Install dependencies:
-
-```bash
-npm install
-```
-
-2. Generate Prisma client:
-
-```bash
-npm run prisma:generate
-```
-
-3. Run database migrations:
-
-```bash
-npm run prisma:migrate
-```
 
 ### Development
 
@@ -48,44 +43,6 @@ npm run dev
 ```
 
 The API will be available at `http://localhost:3000`
-
-### Type Checking
-
-Run TypeScript type checking:
-
-```bash
-npm run type-check
-```
-
-### API Usage
-
-#### Create a booking
-
-```bash
-curl -X POST http://localhost:3000/bookings \
-  -H "Content-Type: application/json" \
-  -d '{"name": "John Doe", "date": "2024-01-15T10:00:00Z"}'
-```
-
-#### Get all bookings
-
-```bash
-curl http://localhost:3000/bookings
-```
-
-#### Health check
-
-```bash
-curl http://localhost:3000/health
-```
-
-### Deployment
-
-Deploy to AWS:
-
-```bash
-npm run deploy
-```
 
 ## Technologies Used
 
